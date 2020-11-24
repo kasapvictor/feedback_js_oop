@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Feedback</title>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <h1>Feedback</h1>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <section>
+
+
+            <div class="content">
+                <div class="wrap-from">
+                    <h3>Form</h3>
+                    <form id="feedback" method="post">
+                        <div class="form-row">
+                            <div class="field-input">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name">
+                            </div>
+
+                            <div class="field-input">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" rows="3"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="field-input">
+                                <label for="date">Date</label>
+                                <input type="date" name="date" id="date">
+                            </div>
+
+                            <div class="field-input">
+                                <label for="select">Select</label>
+                                <select name="select" id="select">
+                                    <option value="" disabled selected>Chose...</option>
+                                    <option value="option1">Option 1</option>
+                                    <option value="option1">Option 2</option>
+                                    <option value="option1">Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-row">
+                            <div class="field-files">
+                                <label for="attachments" class="btn"> Add files </label>
+                                <input type="file" name="attachments" id="attachments" multiple>
+
+                                <div class="form-files-info">
+                                    <div class="form-files-info-content">
+                                        <div class="form-files-list"></div>
+                                    </div>
+                                </div>
+                                <div class="info-message"></div>
+                                <div class="files-prev"></div>
+                                <div class="drop-zone" name="dropfiles">drop files here</div>
+
+                            </div>
+                        </div>
+
+                        <button class="submit" name="submit"> Send </button>
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <h3>Footer</h3>
+    </div>
+</footer>
+
+
+
+
+<script src="script/Classes/View.js"></script>
+<script src="script/Classes/Storage.js"></script>
+<script src="script/Classes/Controller.js"></script>
+<script src="script/main.js"></script>
+<script src="script/webp.js"></script>
+</body>
+</html>
